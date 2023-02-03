@@ -28,6 +28,14 @@
     viewer.camera.flyTo({
       destination: Cesium.Cartesian3.fromDegrees(151.2153825283158,-33.856650736908215,4000/*-104.9965, 39.74248, 4000*/)
     });
+
+    const newBuildingTileset = viewer.scene.primitives.add(
+  new Cesium.Cesium3DTileset({
+    url: Cesium.IonResource.fromAssetId(1527390)
+  })
+);
+// Move the camera to the new building.
+viewer.flyTo(newBuildingTileset);
   </script>
   </body>
 </html>
