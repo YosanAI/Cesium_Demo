@@ -26,7 +26,7 @@
     const buildingsTileset = viewer.scene.primitives.add(Cesium.createOsmBuildings());
     // Fly the camera to Denver, Colorado at the given longitude, latitude, and height.
     viewer.camera.flyTo({
-      destination: Cesium.Cartesian3.fromDegrees(151.2153825283158,-33.856650736908215,4000/*-104.9965, 39.74248, 4000*/)
+      destination: Cesium.Cartesian3.fromDegrees(151.2153825283158,-33.856650736908215,1000/*-104.9965, 39.74248, 4000*/)
     });
 
     const newBuildingTileset = viewer.scene.primitives.add(
